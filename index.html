@@ -3,11 +3,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forex Signals</title>
+  <title>Signaux Forex</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #f5f7fa;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111820;
+      padding: 22px 18px;
+      border-bottom: 1px solid #27313d;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #4f91ff;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: #9ca8b5;
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 700px;
+      margin: auto;
+      padding: 22px 16px 40px;
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #151f2b, #0e141c);
+      border: 1px solid #293544;
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aab5c1;
+      line-height: 1.6;
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      background: #123d29;
+      color: #54d98b;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 21px;
+      margin-bottom: 14px;
+    }
+
+    .signal {
+      background: #121922;
+      border: 1px solid #293544;
+      border-radius: 16px;
+      padding: 18px;
+      margin-bottom: 14px;
+    }
+
+    .signal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .pair {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .buy {
+      background: #123d29;
+      color: #54d98b;
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .sell {
+      background: #421c25;
+      color: #ff6d7d;
+      padding: 7px 12px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .detail {
+      background: #0c1219;
+      border-radius: 10px;
+      padding: 12px;
+    }
+
+    .label {
+      color: #7f8b98;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .value {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .pending {
+      color: #ffc857;
+    }
+
+    .footer {
+      text-align: center;
+      color: #687482;
+      font-size: 12px;
+      margin-top: 30px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 450px) {
+      .hero h1 {
+        font-size: 26px;
+      }
+
+      .details {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Forex Signals</h1>
-  <p>Notre espace privé de signaux Forex.</p>
+
+  <header>
+    <div class="logo">📈 Signaux Forex</div>
+    <div class="subtitle">Espace privé de signaux Forex</div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Signaux du marché</h1>
+      <p>
+        Retrouvez ici les signaux Forex disponibles,
+        avec le niveau d'entrée, le Stop Loss et les objectifs.
+      </p>
+
+      <div class="status">
+        ● Marché surveillé
+      </div>
+    </section>
+
+    <h2 class="section-title">Signaux actifs</h2>
+
+    <div class="signal">
+      <div class="signal-top">
+        <div class="pair">EUR/USD</div>
+        <div class="buy">BUY</div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <div class="label">Entrée</div>
+          <div class="value">1.0850</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Stop Loss</div>
+          <div class="value">1.0810</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Take Profit</div>
+          <div class="value">1.0920</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Statut</div>
+          <div class="value pending">En cours</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-top">
+        <div class="pair">GBP/USD</div>
+        <div class="sell">SELL</div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <div class="label">Entrée</div>
+          <div class="value">1.2740</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Stop Loss</div>
+          <div class="value">1.2790</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Take Profit</div>
+          <div class="value">1.2650</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Statut</div>
+          <div class="value pending">En cours</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="signal">
+      <div class="signal-top">
+        <div class="pair">XAU/USD</div>
+        <div class="buy">BUY</div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <div class="label">Entrée</div>
+          <div class="value">2 410.00</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Stop Loss</div>
+          <div class="value">2 390.00</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Take Profit</div>
+          <div class="value">2 450.00</div>
+        </div>
+
+        <div class="detail">
+          <div class="label">Statut</div>
+          <div class="value pending">En cours</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      Signaux Forex — Interface d'apprentissage.<br>
+      Les informations affichées ne constituent pas une garantie de résultat financier.
+    </div>
+
+  </main>
+
 </body>
 </html>
