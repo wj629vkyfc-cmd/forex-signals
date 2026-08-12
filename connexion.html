@@ -1,1 +1,151 @@
-Ajout de la page connexion
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Signaux Trading</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f14;
+      color: #f5f7fa;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111820;
+      padding: 22px 18px;
+      border-bottom: 1px solid #27313d;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #4f91ff;
+    }
+
+    main {
+      max-width: 500px;
+      margin: auto;
+      padding: 30px 16px;
+    }
+
+    .card {
+      background: #121922;
+      border: 1px solid #293544;
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #9ca8b5;
+      margin-bottom: 25px;
+      line-height: 1.5;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px;
+      margin-bottom: 17px;
+      border-radius: 9px;
+      border: 1px solid #344252;
+      background: #0c1219;
+      color: white;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: #4f91ff;
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .link {
+      text-align: center;
+      margin-top: 20px;
+      color: #9ca8b5;
+    }
+
+    a {
+      color: #4f91ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">📈 Signaux Trading</div>
+  </header>
+
+  <main>
+
+    <div class="card">
+
+      <h1>Se connecter</h1>
+
+      <p class="subtitle">
+        Connecte-toi pour accéder à ton espace personnel.
+      </p>
+
+      <form>
+
+        <label for="email">Adresse email</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="exemple@email.com"
+          required
+        >
+
+        <label for="password">Mot de passe</label>
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Ton mot de passe"
+          required
+        >
+
+        <button type="submit">
+          Se connecter
+        </button>
+
+      </form>
+
+      <div class="link">
+        Pas encore de compte ?
+        <a href="inscription.html">Créer un compte</a>
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
